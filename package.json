@@ -4,8 +4,8 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "start":"node dist/server.js",
-    "start:ts": "tsc && npm run start",
+    "start:dist": "node dist/backend/server.js",
+    "start:ts": "tsc && npm run start:dist",
     "backend:watch": "nodemon",
     "backend:start": "ts-node backend/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,7 @@
     "tslint": "^5.20.1",
     "typescript": "^3.9.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ts-node": "^9.1.1"
+  }
 }
